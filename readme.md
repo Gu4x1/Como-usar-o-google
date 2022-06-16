@@ -140,7 +140,7 @@ Procura pelo resultado no facebook ``E`` no orkut
 | :-------------- |:---------------------------------------------------| :------------------------------------|
 | ( )          | Combinação de operadores               |      (site:facebook.com \| site:twitter.com) & intext:"login"          |
 
-Usado para combinar filtros, neste caso procurar pela palavra login no facebook e no twitter
+Usado para combinar filtros, neste caso procurar pela palavra login somente no facebook e no twitter
 
 
 
@@ -153,16 +153,16 @@ usado para ocultar um resultado que não queiramos, neste caso pesquisar por fer
 
 | Operador        | Descrição                                          | Exemplo                              |
 | :-------------- |:---------------------------------------------------| :------------------------------------|
-|   *        |  qualquer outra coisa               |  site:facebook.*                |
+|   *        |  qualquer outra coisa               |  site:gov.*                |
 
-Este operador traz tudo que tiver apos a palavra buscada, neste caso não traz somente facebook.com mas tras facebook.ch / .fr .jp 
+Este operador traz tudo que tiver apos a palavra buscada, neste caso não traz somente gov.com mas tambem gov.ch gov.fr gov.jp 
 
 exemplo
 ``
-site:facebook.* -site:facebook.com
+site:gov.* -site:gov.com
 ``
 
-ele vai trazer facebook.qualquercoisa menos facebook.com
+ele vai trazer gov.qualquercoisa menos gov.com
 
 | Operador        | Descrição                                          | Exemplo                              |
 | :-------------- |:---------------------------------------------------| :------------------------------------|
