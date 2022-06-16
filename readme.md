@@ -40,4 +40,110 @@ agora que você entendeu como funciona, chega de enrolação e vamos para ***oqu
 
 ## FILTROS DE PESQUISA/DORKS
 
+**TODOS OS FILTROS PODEM SER COMBINADOS PARA UMA MELHOR BUSCA**
+
+como no exemplo da imagem o primeiro e talvez o ***mais util*** filtro/operador que irei apresentar é o ***"entre aspas"***
+
+
+| Operador          | Descrição                                          | Exemplo                              |
+| :-------------- |:---------------------------------------------------| :------------------------------------|
+|    " "      |  Busca pela sequencia exata que esta escrito                               |        "sopa de abacate"          |
+
+este filtro pesquisa ***exatamente*** pela junção destas palavras, e não por cada uma delas, trazendo exatamente como você pesquisou, sem margem de erros
+é muito util pra uma frase, citação, contexto especifico.
+
+
+| Filtro          | Descrição                                          | Exemplo                              |
+| :-------------- |:---------------------------------------------------| :------------------------------------|
+| filetype          |   Busca pelo tipo de arquivo                              |         filetype=pdf         |
+| ext              | Busca pelo tipo de extensão de arquivo                   | ext=pdf |
+
+Busca por um tipo especifico de arquivo, somente pdf neste caso, é util para busca de livros, papers, documentos etc
+mas podemos incluir qualquer formato de arquivo que ela encontra ( doc, xls, pdf, mp3, epub, bkp, txt, ps, ppt, rar, etc.
+
+o ideal é pesquisar da seguinte forma:
+```
+"livro de jardinagem" filetype:pdf
+```
+
+| Filtro          | Descrição                                          | Exemplo                              |
+| :-------------- |:---------------------------------------------------| :------------------------------------|
+|     intitle      |  Busca pela frase no titulo da pagina                                |         intitle=Prefeitura         |
+
+
+busca pela palavra que esta EXATAMENTE no titulo da pagina, e não em seu conteudo
+
+
+| Filtro          | Descrição                                          | Exemplo                              |
+| :-------------- |:---------------------------------------------------| :------------------------------------|
+| intext          |  Busca pela frase contida no texto da pagina                               |       intext=Curriculo           |
+
+Busca pela palavra dentro de um texto, artigo, pagina
+
+	
+| Filtro          | Descrição                                          | Exemplo                              |
+| :-------------- |:---------------------------------------------------| :------------------------------------|
+|  inurl         | apenas resultados que apareçam na url especifica                                | inurl=facebook.com                  |
+
+
+busca apenas no site que foi selecionado, neste caso o facebook, não trazendo resultados de fora do facebook, é util pra achar algo que esta em um site que você sabe que contenha o conteudo que vc busca. 
+
+exemplo:
+```
+inurl=facebook.com "Grupo de pesca"
+```
+
+ele vai trazer somente grupos de pesca dentro do site facebook
+
+
+| Filtro          | Descrição                                          | Exemplo                              |
+| :-------------- |:---------------------------------------------------| :------------------------------------|
+|           |                                 |                  |
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
