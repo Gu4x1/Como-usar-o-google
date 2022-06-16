@@ -9,6 +9,11 @@ mas eu te pergunto
 
 Neste post irei ensinar alguns truques para agilizar sua busca por um conteudo especifico, sem enrolação e pesquisas que não resultam em dados concretos
 
+![image](https://user-images.githubusercontent.com/45929092/174190951-6294cc7d-110d-4e19-8e9c-3e30e57ff5b1.png)
+
+DORKS = filtros de pesquisa
+
+É muito usado por hackers/osint (Open source intelligence) e por usuarios mais avançados, e seu uso é bem SIMPLES sendo um facilitador de pesquisa e com toda certeza irá te ajudar tambem!
 
 # Mas primeiramente irei explicar como o google funciona.
 
