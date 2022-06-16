@@ -9,7 +9,7 @@ mas eu te pergunto
 Neste post irei ensinar alguns truques para agilizar sua busca por um conteudo especifico, sem enrolação e pesquisas que não resultam em dados concretos
 
 
-Mas primeiramente irei explicar como o google funciona.
+# Mas primeiramente irei explicar como o google funciona.
 
 O google é basicamente um indexador de paginas na web, ele possui um *BUSCADOR/CRAWLER* que basicamente vasculha a internet de forma automatizada, em busca de paginas para poder indexalas ao seu motor de busca, alimentando a base de dados para trazer para quem pesquisa sobre aquele determinado assunto.
 
