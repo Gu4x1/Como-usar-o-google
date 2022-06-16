@@ -173,10 +173,11 @@ after = depois
 
 traz pdf que foram postados somente entre a data especifica, bom para pesquisar algo em um ano especifico
 
-mas podemos usar no proprio google o filtro
+mas podemos usar a ferramenta no proprio google 
 
 ![image](https://user-images.githubusercontent.com/45929092/174188782-1739be05-670f-42d6-a474-5a1fae1fb300.png)
 
+*não trouxe resultados porque não tinha uma palavra a ser pesquisada
 
 
 # Busca reversa de imagem
