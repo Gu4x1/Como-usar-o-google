@@ -42,6 +42,9 @@ agora que você entendeu como funciona, chega de enrolação e vamos para ***oqu
 
 **TODOS OS FILTROS PODEM SER COMBINADOS PARA UMA MELHOR BUSCA**
 
+Para OPERADORES usamos eles diretamente  ( "" , | , - , + , (), *, ~, &)
+para FILTROS usamos ( nomedofiltro:palavra
+
 como no exemplo da imagem o primeiro e talvez o ***mais util*** filtro/operador que irei apresentar é o ***"entre aspas"***
 
 
@@ -55,8 +58,8 @@ este filtro pesquisa ***exatamente*** pela junção destas palavras, e não por 
 
 | Filtro          | Descrição                                          | Exemplo                              |
 | :-------------- |:---------------------------------------------------| :------------------------------------|
-| filetype          |   Busca pelo tipo de arquivo                              |         filetype=pdf         |
-| ext              | Busca pelo tipo de extensão de arquivo                   | ext=pdf |
+| filetype          |   Busca pelo tipo de arquivo                              |         filetype:pdf         |
+| ext              | Busca pelo tipo de extensão de arquivo                   | ext:pdf |
 
 Busca por um tipo especifico de arquivo, somente pdf neste caso, é util para busca de livros, papers, documentos etc
 mas podemos incluir qualquer formato de arquivo que ela encontra ( doc, xls, pdf, mp3, epub, bkp, txt, ps, ppt, rar, etc.
@@ -68,7 +71,7 @@ o ideal é pesquisar da seguinte forma:
 
 | Filtro          | Descrição                                          | Exemplo                              |
 | :-------------- |:---------------------------------------------------| :------------------------------------|
-|     intitle      |  Busca pela frase no titulo da pagina                                |         intitle=Prefeitura         |
+|     intitle      |  Busca pela frase no titulo da pagina                                |         intitle:Prefeitura         |
 
 
 busca pela palavra que esta EXATAMENTE no titulo da pagina, e não em seu conteudo
@@ -76,21 +79,22 @@ busca pela palavra que esta EXATAMENTE no titulo da pagina, e não em seu conteu
 
 | Filtro          | Descrição                                          | Exemplo                              |
 | :-------------- |:---------------------------------------------------| :------------------------------------|
-| intext          |  Busca pela frase contida no texto da pagina                               |       intext=Curriculo           |
+| intext          |  Busca pela frase contida no texto da pagina                               |       intext:Curriculo           |
 
 Busca pela palavra dentro de um texto, artigo, pagina
 
 	
 | Filtro          | Descrição                                          | Exemplo                              |
 | :-------------- |:---------------------------------------------------| :------------------------------------|
-|  inurl         | apenas resultados que apareçam na url especifica                                | inurl=facebook.com                  |
-
+|  inurl         | apenas resultados que apareçam na url especifica                                | inurl:facebook.com                  |
+| site | resultados no site especifico | site:facebook.com | 
 
 busca apenas no site que foi selecionado, neste caso o facebook, não trazendo resultados de fora do facebook, é util pra achar algo que esta em um site que você sabe que contenha o conteudo que vc busca. 
 
 exemplo:
 ```
-inurl=facebook.com "Grupo de pesca"
+inurl:facebook.com "Grupo de pesca"
+site:facebook.com "Grupo de pesca"
 ```
 
 ele vai trazer somente grupos de pesca dentro do site facebook
@@ -98,52 +102,107 @@ ele vai trazer somente grupos de pesca dentro do site facebook
 
 | Filtro          | Descrição                                          | Exemplo                              |
 | :-------------- |:---------------------------------------------------| :------------------------------------|
-|           |                                 |                  |
+|    link       | Busca por paginas que tenham o link pesquisado               | link:orkut.com                 |
+
+Este filtro tras menções a um link dentro de uma pagina, como um link do seu site em algum outro site
 
 
 
+| Filtro          | Descrição                                          | Exemplo                              |
+| :-------------- |:---------------------------------------------------| :------------------------------------|
+| allinpostauthor          | Busca pelo nome do autor                |     allinpostauthor:Alberto             |
+
+Filtro para buscar por um artigo de um autor especifico, funciona para pesquisa em blogs
+
+
+# OPERADORES
+
+Usamos OPERADORES para "turbinar" a pesquisa ( "" , | , - , + , (), *, ~, &)
+
+misturamos eles com os filtros para melhor filtragem, precisamos repetir o filtro apos o operador para funcionar.
+
+| Operador          | Descrição                                          | Exemplo                              |
+| :-------------- |:---------------------------------------------------| :------------------------------------|
+|    \|        |  Procura por UM termo OU outro             |   site:facebook.com \| site:orkut.com            |
+
+pesquisa por resultados no facebook ``OU`` no orkut, filtrando apenas para estes 2 sites
+
+
+| Operador        | Descrição                                          | Exemplo                              |
+| :-------------- |:---------------------------------------------------| :------------------------------------|
+|     &          |  E /and              |       site:facebook.com & site:orkut.com            |
+
+Procura pelo resultado no facebook ``E`` no orkut
 
 
 
+| Operador        | Descrição                                          | Exemplo                              |
+| :-------------- |:---------------------------------------------------| :------------------------------------|
+| ( )          | Combinação de operadores               |      (site:facebook.com \| site:twitter.com) & intext:"login"          |
+
+Usado para combinar filtros, neste caso procurar pela palavra login no facebook e no twitter
 
 
 
+| Operador        | Descrição                                          | Exemplo                              |
+| :-------------- |:---------------------------------------------------| :------------------------------------|
+|   -        |  Exclui algo da pesquisa              | intext:Fernando -Pessoa                 |
+
+usado para ocultar um resultado que não queiramos, neste caso pesquisar por fernando mas que não tenha nada sobre fernando pessoa, trazendo tudo que NÃO for relacionado a ele
+
+
+| Operador        | Descrição                                          | Exemplo                              |
+| :-------------- |:---------------------------------------------------| :------------------------------------|
+|   *        |  qualquer outra coisa               |  site:facebook.*                |
+
+Este operador traz tudo que tiver apos a palavra buscada, neste caso não traz somente facebook.com mas tras facebook.ch / .fr .jp 
+
+exemplo
+``
+site:facebook.* -site:facebook.com
+``
+
+ele vai trazer facebook.qualquercoisa menos facebook.com
+
+| Operador        | Descrição                                          | Exemplo                              |
+| :-------------- |:---------------------------------------------------| :------------------------------------|
+|  after/before         | resultados entre a data especifica                |    ext:pdf & (before:2022-01-01 after:2021-01-01)           |
+
+before = antes
+after = depois
+
+traz pdf que foram postados somente entre a data especifica, bom para pesquisar algo em um ano especifico
+
+mas podemos usar no proprio google o filtro
+
+![image](https://user-images.githubusercontent.com/45929092/174188782-1739be05-670f-42d6-a474-5a1fae1fb300.png)
 
 
 
+# Busca reversa de imagem
+
+podemos tambem usar a função de busca reversa de imagem pelo google, ela basicamente procura por uma imagem que você passe pra ela.
+
+exemplo:
+você achou a imagem de um quadro e quer ver quem é o possivel autor, se existe a imagem em outra resolução, aonde esta imagem foi postada ou referenciada, ate mesmo para saber aonde fica aquele lugar
 
 
+na aba IMAGENS possui o icone de uma camera
+![image](https://user-images.githubusercontent.com/45929092/174189454-77f97436-ff7e-41a3-b97b-63401dd38b6e.png)
+
+nesta aba possui 2 formas de pesquisa, ou passando a url da imagem, ou enviando a imagem para o google
+
+baixei uma imagem da monalisa, e somente enviei para a pesquisa reversa e o resultado foi 
+- Nome do autor
+- Referencias de imagens 
+- Outros tamanhos/resolução da imagem
+
+![image](https://user-images.githubusercontent.com/45929092/174189898-389bd2cc-38e5-48b2-99d3-41e6acbd5108.png)
+
+Enviando a imagem do cristo redentor ele me trouxe o seguinte resultado
+![image](https://user-images.githubusercontent.com/45929092/174190110-20c1d25f-d6c2-4aa0-b556-f340ad65a991.png)
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+Bom espero ter te ajudado a entender um pouco melhor do poder de busca do google, e que suas pesquisas sejam cada vez mais direcionadas e acertivas com estas dicas
+TAMO JUNTO!
 
