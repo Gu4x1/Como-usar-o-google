@@ -5,7 +5,7 @@ O google é uma das ferramentas de busca mais usadas por todos nós.
 mas eu te pergunto
 
 	
-```VOCÊ SABE REALMENTE COMO USAR O GOOGLE?	```
+### ```VOCÊ SABE REALMENTE COMO USAR O GOOGLE?	```
 
 Neste post irei ensinar alguns truques para agilizar sua busca por um conteudo especifico, sem enrolação e pesquisas que não resultam em dados concretos
 
