@@ -4,7 +4,8 @@
 O google é uma das ferramentas de busca mais usadas por todos nós.
 mas eu te pergunto
 
-    VOCÊ SABE REALMENTE COMO USAR O GOOGLE?
+	
+```VOCÊ SABE REALMENTE COMO USAR O GOOGLE?	```
 
 Neste post irei ensinar alguns truques para agilizar sua busca por um conteudo especifico, sem enrolação e pesquisas que não resultam em dados concretos
 
@@ -17,7 +18,7 @@ cada site de busca (google, yahoo, bing, duckduckgo, etc.) possui seu proprio cr
 
 ele funciona pegando a pagina e separando em trechos, como a palavra "ABACATE", ela pode estar em qualquer parte da pagina, no titulo, no conteudo do artigo, nas referencias, etc.
 
-mas ele não busca diretamente por palavras, ele indexa a pagina inteira, então quando queremos uma receita com ABACATE, irá aparecer milhares de resultados que tenha esta palavra em alguma parte de seu conteudo.
+mas ele não busca diretamente por palavras, ele guarda a pagina inteira, então quando queremos uma receita com ABACATE, irá aparecer milhares de resultados que tenha esta palavra em alguma parte de seu conteudo.
 
 Geralmente olhamos para as primeiras paginas, pois elas podem ter mais acessos e ate mesmo pela facilidade que ela foi encontrada na indexação, mas pode acontecer de você não querer realmente aquele conteudo, mas sim por algo mais especifico, como CREME DE ABACATE, porem ainda assim pode ter centenas de resultados que não te agrade, pois é uma pesquisa generalista.
 
