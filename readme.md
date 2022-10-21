@@ -91,7 +91,7 @@ Busca pela palavra dentro de um texto, artigo, pagina
 	
 | Filtro          | Descrição                                          | Exemplo                              |
 | :-------------- |:---------------------------------------------------| :------------------------------------|
-|  inurl         | busca o site ou diretorio especifico e que apareça na url                                 | inurl:facebook.com  / inurl:/diretorio/arquivo.ext                |
+|  inurl         | busca o site ou sequencia especifica em sites que tem aquilo na url                                 | inurl:facebook.com  / inurl:/diretorio/arquivo.ext                |
 | site | resultados no site especifico | site:facebook.com | 
 
 busca apenas no site que foi selecionado, neste caso o facebook, não trazendo resultados de fora do facebook, é util pra achar algo que esta em um site que você sabe que contenha o conteudo que vc busca. 
